@@ -18,7 +18,7 @@ const Signup = () => {
   } = useForm({ resolver: yupResolver(schema) });
 
   const onSubmit = async (data: any) => {
-    await axios.post("/api/signup", data);
+    await axios.post(`signup`, data);
     alert("Account created successfully!");
   };
 

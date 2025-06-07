@@ -6,7 +6,7 @@ const ForgotPassword = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = async (data: any) => {
-    await axios.post("/api/forgot-password", data);
+    await axios.post(`forgot-password`, data);
     alert("Password reset link sent to your email.");
   };
 
